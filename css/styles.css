@@ -1,0 +1,728 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0
+}
+html, body, div, span, h1, h2, h3, h4, h5, p, a, img, b, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+body {
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    margin: 0px auto;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 17px;
+    line-height: 1.5em;
+    color: #333;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h4 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+
+
+ul {/* list-style: none; */text-align: left;}
+
+
+a:hover{
+ text-decoration: none;
+ outline: 0;
+}
+
+a:focus{
+ text-decoration: none;
+ outline: 0;
+}
+*:focus {
+ outline: none !important;
+}
+.bg_long_form{
+ background-image: url(../img/h141.jpg);
+   background-repeat: no-repeat;
+   background-position-x: center;
+   background-position-y: -22%;
+}
+.preloader{
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ text-align: center;
+ background: #0672b6;
+ z-index: 9999;
+}
+
+.loader{
+ display: inline-block;
+ width: 30px;
+ height: 30px;
+ position: relative;
+ border: 4px solid #Fff;
+ top: calc(50% - 15px);
+ animation: loader 2s infinite ease;
+}
+
+.loader-inner{
+ vertical-align: top;
+ display: inline-block;
+ width: 100%;
+ background-color: #fff;
+ animation: loader-inner 2s infinite ease-in;
+}
+.size_11 {
+ font-size: 11px;
+}
+
+.btn-custom{
+ display: inline-block;
+ font-size: 16px;
+ font-weight: 500;
+ padding: 10px 30px;
+ text-align: center;
+ color: #ff2938;
+ background: #fff;
+ border: 2px solid #fff;
+ border-radius: 26px;
+ transition: all 0.3s;
+}
+
+.btn-custom:hover{
+ background: none;
+ color: #fff;
+}
+
+.customers_image {
+ margin: 0 auto 60px;
+ display:block;
+}
+.mob {
+ display: none !important;
+}
+.btn-booknow{
+ display: inline-block;
+ background: #fe0000;
+ color: #fff;
+ font-size: 20px;
+ font-weight: 500;
+ padding: 10px 30px 8px;
+ border: 2px solid #fe0000;
+ border-radius: 8px;
+ margin-top: 20px;
+ transition: all 0.3s ease-in-out;
+ text-align:center;
+ font-weight: bold;
+ position: relative;
+}
+
+.btn-booknow:hover,.btn-booknow:active,.btn-booknow:focus{
+ background: none;
+ background: #fe0000;
+ color: #fff;
+ font-weight: bold;
+}
+.boxes {
+ display: flex;
+ justify-content: center;
+
+}
+
+.anchor {
+ display: block;
+   position: relative;
+   top: -87px;
+   visibility: hidden;
+}
+.related-product{
+ padding: 80px 0;
+
+}
+
+.related-single{
+ margin-bottom: 80px;
+}
+
+.related-product-info{
+ padding-top: 30px;
+}
+
+.related-product-info h3{
+ font-size: 35px;
+ color: #464646;
+ font-weight: 700;
+ margin-bottom: 1em;
+}
+
+.related-product-info p{
+ font-size: 14px;
+ color: #818282;
+ font-weight: 300;
+ margin-bottom: 1.5em;
+}
+
+.related-product-info .btn-booknow{
+ margin-top: 10px;
+ z-index: 2;
+}
+.old_price {
+ color: #000 !important;
+ text-decoration:line-through;
+}
+
+.new_price {
+ color:red !important;
+ font-size: 23px !important;
+ font-family: "Open Sans", sans-serif;
+ font-weight: 600;
+}
+
+.products {
+ padding:50px 0;
+}
+
+.row.no-gutters {
+display: block;
+margin: 0 auto;
+}
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.products .container-fluid{
+ padding-left: 0;
+ padding-right: 0;
+}
+
+
+.product-single{
+ position: relative;
+ margin: 0 10px;
+ text-align:center;
+ background: #fff;
+ border-radius: 20px ;
+ border: 5px solid #fbca4a;
+ transition: all 0.4s ;
+ width: 375px;
+ max-width: 100%;
+}
+
+
+.section-title {
+   text-align: center;
+   padding-bottom: 20px;
+   margin-bottom: 60px;
+   margin-top:50px;
+   background: url(../images/blue-divider.png) no-repeat bottom center;
+}
+
+.section-title h2 {
+   font-size: 60px;
+   color: #464646;
+   font-weight: 700;
+   margin-bottom: 0;
+}
+
+.selectedBox, .product-single:hover  {
+ background:#fff;
+ transition: all 0.4s ;
+ border-radius: 20px;
+ cursor:pointer;
+ border:5px solid #e62329;
+}
+
+.save {
+ padding: 9px;
+ border-radius: 13px 13px 0 0;
+ color: #fff;
+ background:  #fbca4a;
+ font-size: 25px;
+ margin-top:-1px;
+ margin-left: -1px;
+ margin-right: -1px;
+ font-family: "Open Sans", sans-serif;
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a2e0', endColorstr='#105888',GradientType=0 );
+ transition: all 0.4s ;
+}
+
+.save:hover{
+ background:#eebc77;
+
+}
+
+.selectedBox .save,.product-single:hover .save{
+ border-radius: 13px 13px 0 0;
+ color: #fff;
+ background:  #e62329;
+ font-size: 25px;
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a2e0', endColorstr='#105888',GradientType=0 );
+}
+
+
+.product-image{
+ position: relative;
+ max-width:360px;
+ display:block;
+ margin:0 auto;
+}
+
+.product-image img{
+ width: 90%;
+ border-radius: 15px;
+}
+
+.best-pic{
+   position: absolute;
+   top:43px;
+   right:0;
+   z-index:20;
+   width:150px;
+
+}
+.product-info {
+
+ left: 0;
+ right: 0;
+ bottom: 0;
+ padding: 10px;
+ transition: all 0.3s ease-in-out;
+ text-align: center;
+
+ border-radius: 0 0 20px 20px;
+
+}
+.product-info h3{
+ color: #000;
+ font-size: 26px;
+ margin-bottom: 4px;
+ min-height: 51px;
+ font-family: "Open Sans", sans-serif;
+}
+.product-info h4{
+ color: #000;
+ font-size: 20px;
+ margin-bottom: 4px;
+}
+
+.product-info p{
+ color: #fff;
+ font-size: 18px;
+ font-weight: 500;
+ margin-bottom: 0;
+}
+
+.product-info p span{
+ color: #ffc600;
+ font-family: "Open Sans", sans-serif;
+}
+
+.product-info .btn-booknow{
+ padding: 6px 50px;
+ font-size: 20px;
+ margin-top: 8px;
+
+}
+.btn-booknow:first-letter {
+ text-transform:uppercase;
+}
+.product-single:hover .product-info, .selectedBox .product-info {
+ padding-top: 50px;
+}
+.price_hide{
+ display: none;
+}
+
+.price_hide_two{
+ display: block;
+}
+@media only screen and (max-width: 1200px){
+ .navbar-default .navbar-nav>li>a:after{
+   padding: 0 12px 0 14px;
+ }
+
+ nav.navbar.bootsnav ul.nav > li > a{
+ font-size: 14px;
+ }
+
+ nav.navbar.bootsnav.sticky-header .navbar-brand,
+ nav.navbar.bootsnav .navbar-brand{
+   padding-left: 15px;
+   padding-right: 15px;
+ }
+
+ nav.navbar.bootsnav .navbar-toggle{
+   right: 15px;
+ }
+
+ nav.navbar.bootsnav .navbar-collapse{
+   margin-left: -15px;
+   margin-right: -15px;
+ }
+}
+
+@media only screen and (max-width: 991px){
+.product-info .btn-booknow {
+   padding: 6px 20px;
+}
+ .section-title h2 {
+   font-size: 46px;
+}
+
+ .ways_box {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.ways_box img {
+ max-width: 80px;
+}
+.ways_box p {
+     width: 100%;
+ max-width: 200px;
+   padding: 0 5px;
+   font-size: 14px;
+   line-height: 1;
+}
+.padding div.col-md-6:first-child, .padding div.col-md-6:last-child  {
+ padding:0 !important;
+}
+ .mob  {
+   display: block !important;
+ }
+ .desk {
+   display: none;
+ }
+ .header-bullets  {
+   height: auto;
+   max-width: 380px;
+   margin: 0 auto;
+   text-align: left;
+ }
+
+ .customers_image {
+   max-width: 640px;
+   margin: 0 auto 20px;
+   width: 100%;
+ }
+}
+
+@media only screen and (max-width: 767px){
+ .section-title h2 {
+   font-size: 33px;
+}
+ .slider-image{
+   text-align: center;
+
+ }
+ .slider-image img {
+   max-width:40%;
+ }
+ .second_head {
+   font-size:18px !important;
+ }
+ .banner{
+   padding: 60px 0 60px;
+ }
+ .aboutus,
+ .related-product,
+ .testimonial,
+ .contactus,
+ footer{
+   padding: 60px 0;
+ }
+
+ .aboutus .section-title {
+   text-align:center;
+   background: url(../images/blue-divider.png) no-repeat bottom center;
+ }
+ .features{
+   padding: 60px 0 30px;
+ }
+
+ .about-image{
+   text-align: center;
+ }
+
+ .features-image{
+   margin-bottom: 40px;
+ }
+
+ .feature-single{
+   margin-bottom: 30px;
+ }
+
+ .feature-single h3{
+   font-size: 60px;
+ }
+
+ .related-product-info{
+   margin-bottom: 40px;
+ }
+
+ .related-product-image{
+   text-align: center;
+ }
+
+ .related-product-info h3{
+   font-size: 24px;
+ }
+
+ .product-single {
+   margin: 20px 10px;
+}
+}
+
+@media only screen and (max-width: 850px){
+   .best-pic{
+       width:70px;
+
+   }
+}
+
+@media only screen and (max-width: 767px){
+
+   .best-pic {
+   position: absolute;
+   top: 43px;
+   width: 80px;
+}
+
+   .product-info h3 {
+   font-size: 20px;
+   min-height: 70px;
+ }
+ .product-info h4{
+ color: #000;
+ font-size: 15px;
+ margin-bottom: 4px;
+}
+}
+
+@media only screen and (max-width: 640px) {
+ .product-single:hover .product-info, .selectedBox .product-info {
+   padding-top:10px !important;
+ }
+ .product-info p {
+   font-size: 16px;
+ }
+
+}
+
+@media only screen and (max-width: 528px){
+   .best-pic {
+   position: absolute;
+   top: 68px;
+  }
+}
+@media only screen and (max-width: 480px) {
+ .product-single {
+   margin: 20px 5px;
+ }
+ .product-info button {
+   font-size: 17px !important;
+   font-weight: bold;
+ }
+}
+
+@media only screen and (max-width: 450px){
+  .products {
+   padding:0 0;
+  }
+   .product-image img {
+   width: 70%;
+}
+
+ .bg_long_form {
+   background-position-y: 10%;
+ }
+ .price_hide{
+ display: inline-block;
+ color: #fff;
+ }
+
+ .price_hide_two{
+ display: none;
+ }
+
+   .section-title{
+       margin-top:1px;
+       margin-bottom:1px;
+
+   }
+
+   .section-title h2{
+       font-size:25px;
+   }
+   .product-info button {
+   font-size: 15px !important;
+   }
+    .boxes {
+     display:block;
+     justify-content: center;
+
+       }
+ .col_6{
+     width: 50%;
+     float: left;
+     }
+  .container-form{
+     padding-left: 2px;
+    padding-right: 2px;
+    }
+
+   .best-pic {
+   top: 42px;
+   width: 70px;
+  }
+
+   .product-info, .product-info h3, .product-info p,  .save {
+   font-size: 23px !important;
+ }
+ .product-info h4{
+ color: #000;
+ font-size: 13px;
+ margin-bottom: 8px;
+}
+}
+@media only screen and (max-width: 415px) {
+   .product-single:hover .product-info, .selectedBox .product-info {
+     padding-top: 10px !important;
+ }
+
+   .best-pic{
+        top:28px;
+   }
+
+   figure {
+   padding-top: 5px;
+}
+
+   .product-image img {
+           width: 70%;
+           border-radius: 15px;
+   }
+
+   .product-single {
+   margin: 10px 5px;
+ }
+
+   .product-info .btn-booknow {
+
+   margin-top: 1px;
+   }
+
+ .product-info, .product-info h3, .product-info p, .save {
+   font-size: 18px !important;
+   /*margin-top: 1px;*/
+ }
+
+   .save {
+   font-size: 17px !important;
+   margin-bottom: 1px;
+   padding-top:2px;
+   padding-bottom:2px;
+}
+
+
+ .product-info h3 {
+   min-height: 25px;
+ }
+
+ .product-info .btn-booknow {
+   padding: 10px 28px ;
+ }
+}
+
+@media only screen and (max-width: 370px) {
+
+   .product-info .btn-booknow {
+   padding: 10px 17px ;
+ }
+
+
+ .product-info, .product-info h3, .product-info p,  .save {
+   font-size: 15px !important;
+ }
+
+ .product-info h4{
+ color: #000;
+ font-size: 13px;
+ margin-bottom: 4px;
+}
+
+ .product-info button {
+   font-size: 15px !important;
+ }
+}
+
+@media only screen and (max-width: 371px){
+   .best-pic{
+        top:28px;
+       width:60px;
+   }
+}
+
+
+@media only screen and (max-width: 330px){
+  .product-info .btn-booknow {
+   padding: 10px 5px ;
+ }
+}
+
+
+
+@media only screen and (max-width: 320px){
+
+   figure {
+   margin-top: 5px;
+}
+   .product-image img {
+           width: 70%;
+           border-radius: 15px;
+   }
+   .best-pic{
+       top: 28px;
+   width: 55px;
+   }
+ .product-info, .product-info h3, .product-info p,  .save {
+   font-size: 15px !important;
+ }
+ .product-info h4{
+ color: #000;
+ font-size: 11px;
+ margin-bottom: 4px;
+}
+
+ .product-info button {
+   font-size: 15px !important;
+ }
+
+}
+
+@media only screen and (max-width: 319px){
+ .product-info button {
+   font-size: 11px !important;
+ }
+   .best-pic{
+        top:29px;
+       width:50px;
+   }
+}
+@media only screen and (max-width: 316px){
+  .best-pic{
+       top:54px;
+  }
+}
